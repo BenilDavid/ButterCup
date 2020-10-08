@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/buttercup.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/buttercup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>ButterCup</title>
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li>          
+              <a class="logo" href="#" alt="logo">ButterCup</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">shop</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Chocolate cake</a>
+              <a class="dropdown-item" href="#">Cream cake</a>
+              <a class="dropdown-item" href="#">Black forest</a>
+              <a class="dropdown-item" href="#">White forest</a>
+            </div>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">about us</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">blog</a>
+          </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <a class="nav-link" data-toggle="dropdown" href="#">pages</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">My Account</a>
+              <a class="dropdown-item" href="#">Wishlist</a>
+              <a class="dropdown-item" href="#">Compare</a>
+            </div>
+            </div>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+          </li>
+          <!-- <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form> -->
+            <!-- <a class="cart" href="#"><img src="images/shopping-cart.png" alt="cart" ></a> -->
+           <a class="cart" href="#">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart4" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+              </svg>
+           </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- carousel -->
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/carousel/cake-1.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/carousel/cake-2.jpg" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="images/carousel/cake-3.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <svg width="150px" height="150px" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+    </svg>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <svg width="150px" height="150px" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+    </svg>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+     
+<div class="container">
+  <h2 class="top-deals">top deals of the day</h2>
+</div>
+<div class="container">
+  <div class="row row1">
+    <div class="col"><img src="images/white forest.jpg" class="deal-img" alt=""></div>
+    <div class="col"><p class="flavour">White Forest</p></div>
+    <div class="w-100"></div>
+    <div class="col"><p class="flavour">Pink Rose Cake</p></div>
+    <div class="col"><img src="images/pink rose cake.jpg" class="deal-img" alt=""></div>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <img src="images/cake-3.jpg" class="deal-img" alt="">
+    </div>
+    <div class="col">
+      <p class="flavour">Cup Cake</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p class="flavour">Pineapple Flavoured Cake</p>
+      </div>
+      <div class="col">
+        <img src="images/pineapple flavour.jpg" class="deal-img" alt="">
+      </div>
+    </div>
+  </div>
+</div>  
+
+<!-- footer area-->
+<div class="footer">
+
+  <div class="row">
+    <div class="col-sm">
+    <div class="address">
+      <h3>address</h3>
+    </div>
+    </div>
+    <div class="delivery col-sm">
+      <div class="contain col">
+      <h3>Delivery Now</h3>
+      <form action=""> 
+      <label for="">Name :</label>
+      <input type="text" placeholder="Your Name">
+      <br>
+      <label for="">E-mail :</label>
+      <input type="text" placeholder="E-mail">
+      <br>
+      <label for="">Contact :</label>
+      <input type="text" placeholder="Mobile Number">
+      <br>
+      <div class="wrapper">
+        <button id="btn">Order Now</button>
+      </div>
+      </form>
+      <div class="copy">
+        <p>&copy copyright. All rights reserved</p>
+      </div>
+    </div>
+    </div>
+    <div class="timing col-sm">
+      <div><h3>TIME TO OPEN</h3>
+        <ul>
+          <li class="duration">monday - friday</li>
+          <li class="duration">8:00 AM - 8:30 PM</li>
+          <li class="duration">saturday - sunday</li>
+          <li class="duration">10:00 AM - 4:30 PM</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+   
+</body>
+</html>
+
+

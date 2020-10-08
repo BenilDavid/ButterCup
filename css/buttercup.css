@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navbar .................*/
+.navbar{
+    background-color: antiquewhite;
+    height: 100px;
+    border-bottom: 1px solid brown;
+    box-shadow: inset 0px -1px 3px brown;
+}
+.navbar-nav .logo{
+    text-decoration: none;
+    color: brown;
+    font-size: 50px;
+    font-family: 'Dancing Script', cursive;
+    margin-left: 80px;
+}
+
+.navbar-nav .nav-item{
+    white-space: nowrap;
+    margin: auto 65px;
+}
+.navbar-nav .nav-item .nav-link{
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    
+    border-bottom: 2px solid black;
+    border-color: brown;
+    transition-property: all 1s;
+}
+.bi-cart4{
+   
+    width: 30px;
+    height: 25px;
+    margin: 25px 25px 0 130px;
+}
+.bi-cart4:hover{
+    color: brown;
+}
+.cart{
+    color: black;
+}
+
+/* carousel .....................*/
+.d-block{
+    height: 700px;
+    width: 1600px;
+}
+.carousel-item img{
+max-width: width 100%;
+}
+.carousel-control-prev:hover,.carousel-control-next:hover{
+color: black;
+opacity: 20%;
+}
+
+.container .row .col img{
+   
+    width: 100%;
+  
+}
+.container .row .col img:hover{
+    opacity: 80%;
+}
+
+/* top deals of the day................... */
+.top-deals{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 80px;
+    margin: 100px auto;
+    border-bottom: 1px solid brown;
+    width: 50%;
+}
+
+.flavour{
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: 50% auto;
+}
+
+.top-deals {
+    border-bottom: solid 5px brown;
+    transition:border 0.1s linear;
+  }
+  
+  .top-deals:hover {
+       border-width: 10px; 
+}
+
+/* footer ........................ */
+.footer{
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(to right bottom, rgb(112, 72, 72), rgba(177, 102, 79, 0.8)), url(images/footer.jpg);
+    position: relative;
+}
+
+.contain {
+    width: 500px;
+    clear: both;
+  }
+  .contain label{
+      text-transform: uppercase;
+  }
+  
+  .contain input{
+    width: 100%;
+    clear: both;
+    padding-left: 10px;
+  }
+  .wrapper{
+text-align: center;
+  }
+  #btn{
+      border-radius: 3px;
+      padding: 10px 40px;
+      margin: 50px auto;
+  }
+  .timing{
+      margin: auto auto;
+      text-align: center;
+     
+  }
+  .timing ul{
+    list-style-type: none;
+  }
+  .copy{
+      text-align: center;
+  }
+.timing div h3,.duration,.copy p,.contain h3,label,.address h3{
+    color: white;
+}
+.address h3{
+    text-align: center;
+    text-transform: uppercase;
+}
