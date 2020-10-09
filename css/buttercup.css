@@ -1,13 +1,18 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+body{
+    box-sizing: border-box;
+    background-color: rgb(255, 239, 218);
 }
 /* navbar .................*/
 .navbar{
-    background-color: antiquewhite;
+    background-color: rgb(146, 119, 82);
     height: 100px;
     border-bottom: 1px solid brown;
-    box-shadow: inset 0px -1px 3px brown;
+    box-shadow: inset 0px -1px 0px brown;
 }
 .navbar-nav .logo{
     text-decoration: none;
@@ -37,7 +42,7 @@
     height: 25px;
     margin: 25px 25px 0 130px;
 }
-.bi-cart4:hover{
+.bi-cart4 path:hover{
     color: brown;
 }
 .cart{
@@ -50,20 +55,12 @@
     width: 1600px;
 }
 .carousel-item img{
-max-width: width 100%;
+    top: 0;
+width: 100%;
 }
 .carousel-control-prev:hover,.carousel-control-next:hover{
 color: black;
 opacity: 20%;
-}
-
-.container .row .col img{
-   
-    width: 100%;
-  
-}
-.container .row .col img:hover{
-    opacity: 80%;
 }
 
 /* top deals of the day................... */
@@ -73,44 +70,77 @@ opacity: 20%;
     letter-spacing: 5px;
     line-height: 80px;
     margin: 100px auto;
-    border-bottom: 1px solid brown;
+    border-bottom: 5px solid brown;
     width: 50%;
+    transition:border 0.1s linear;
 }
-
+.deal-img{
+    width: 100%;
+    height: auto;
+}
+.heart{
+    height: 20px;
+    width: 20px;
+}
 .flavour{
     font-family: 'Roboto', sans-serif;
     font-size: 40px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin: 50% auto;
+    position: absolute;
+    top: 50%;
+    left: 25%;
 }
-
-.top-deals {
-    border-bottom: solid 5px brown;
-    transition:border 0.1s linear;
-  }
-  
   .top-deals:hover {
        border-width: 10px; 
 }
 
 /* footer ........................ */
 .footer{
+    margin-top: 100px;
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(to right bottom, rgb(112, 72, 72), rgba(177, 102, 79, 0.8)), url(images/footer.jpg);
-    position: relative;
+    background-image: linear-gradient(to right bottom, rgb(112, 72, 72), rgba(177, 102, 79, 0.5)), url(../images/footer.jpg);
+    background-size: cover;
+    color: white;
 }
-
-.contain {
+.contain h3,.address h3,.timing h3{
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px auto;
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+/* address ..........................*/
+.address p {
+    text-align: center;
+}
+  /* home delivery  .................. */
+  .contain {
     width: 500px;
     clear: both;
   }
   .contain label{
       text-transform: uppercase;
   }
-  
+label{
+    margin: 10px 0px 0px 0px;
+}
+input{
+    border: 0;
+    background: none;
+    border-bottom: 1px solid white;
+}
+/* input:visited{
+    border: 0;
+} */
+input[type="text"], input[type="email"],input[type="tel"], textarea, select { 
+    outline: none;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: white;
+    opacity: 50%;
+    font-weight: 200;
+}
   .contain input{
     width: 100%;
     clear: both;
@@ -119,26 +149,27 @@ opacity: 20%;
   .wrapper{
 text-align: center;
   }
-  #btn{
-      border-radius: 3px;
+   #btn{
+      background: none;
+      border: 1px solid white;
+      border-radius: 5px;
       padding: 10px 40px;
-      margin: 50px auto;
+      margin: 30px auto;
+      color: white;
   }
-  .timing{
-      margin: auto auto;
+  #btn:hover{
+      background: white;
+      color: brown;
+  }
+  .copy{
+    text-align: center;
+}
+  /* open - close timing .......................*/
+.duration{
+      margin: 15px auto;
       text-align: center;
-     
   }
   .timing ul{
     list-style-type: none;
   }
-  .copy{
-      text-align: center;
-  }
-.timing div h3,.duration,.copy p,.contain h3,label,.address h3{
-    color: white;
-}
-.address h3{
-    text-align: center;
-    text-transform: uppercase;
-}
+

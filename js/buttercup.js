@@ -1,6 +1,11 @@
-const btn = document.querySelector('#btn');
-const img = document.querySelector('.deal-img');
+let btn = document.querySelector('#btn');
+let img = document.querySelector('.deal-img');
 
-img.addEventListener("hover",function(){
-document.style.img = "opacity:50%"
-})
+img.addEventListener("click",function(event){
+    event.alert("heloo world");
+});
+
+// function orderButton(){
+//     const btn1 = document.createElement("button");
+//     btn1.classList.add("jsbutton");
+// }
